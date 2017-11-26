@@ -1,0 +1,208 @@
+/*
+全局样式
+*/
+a{
+    color: #000;
+}
+a:hover,a:focus{
+    text-decoration: none;
+    color: #000;
+}
+
+body{
+    background: #ece7ef;
+    padding: 0;
+    margin: 0;
+}
+h4{
+    font-weight: bold;
+    height: 48px;
+    line-height: 48px;
+    text-indent: 1em;
+    margin: 0;
+    border-bottom: 1px solid #e7ecef;
+    cursor: pointer;
+    background: #fff;
+}
+/*
+头部样式
+*/
+.header-top,.top-left,.top-right{
+    height: 40px;
+    background: #48525e;
+    color: #d4d5d6;
+    display: flex;
+}
+.header-top{
+    justify-content: space-between;
+}
+.header-mean,.header-top,.blob_show,footer{
+    padding: 0 100px;
+}
+.header-top .top-left .icon{
+    background: red;
+}
+.header-top .top-left .icon-name{
+    width: 80px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.header-top .top-left span,
+.header-top .top-right span{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.header-top .login{
+    position: relative;
+    color:  #d4d5d6;
+}
+.header-top .login:after{
+    content: '|';
+    position: absolute;
+    right: 0;
+}
+.header-top .top-right .glyphicon-search{
+    border-left: 1px solid #74797e;
+    border-right: 1px solid #74797e;
+}
+.header-top .glyphicon-align-justify{
+    border-right: 1px solid #74797e;
+}
+
+.header-mean{
+    box-shadow: 0 4px #e1e1e1;
+    background: #fff;
+}
+.header-mean ul{
+    list-style: none;
+    display: flex;
+    height: 52px;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+.header-mean .mean-left{
+    width: 600px;
+}
+.header-mean .mean-left li a{
+    display: flex;
+    height: 52px;
+    align-items: center;
+    font-size: 16px;
+    color: #727272;
+}
+/*
+列表左边
+*/
+.blob_show{
+    margin-top: 20px;
+}
+.blob_show .blob_list_warp{
+    width: 800px;
+}
+.blob_show .blob_listItem{
+    background: #fff;
+    overflow: hidden;
+}
+.blob_show .blob_listItem .blob_list{
+    position: relative;
+    float: left;
+    margin-left: 34px;
+}
+.blob_show .blob_listItem .blob_list img{
+    width: 220px;
+    height: 220px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.blob_listItem .shape{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.blob_listItem .shape .shape-content{
+    display: block;
+    padding: 10px;
+    font-size:18px;
+}
+.blob_listItem .blob_list:hover .shape-detail{
+    display: flex;
+}
+.blob_listItem .shape .shape-detail{
+    display: none;
+    padding: 10px;
+    justify-content:space-between;
+}
+.shape .shape-detail .glyphicon:before{
+    padding:0 4px;
+}
+/*
+尾部样式
+*/
+footer{
+    height: 123px;
+    background: #fff;
+}
+
+.footer-mean ul{
+    display: flex;
+    height: 40px;
+    width: 800px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ece7ef;
+}
+.footer-mean span{
+    display: inline-block;
+}
+.footer-mean ul li{
+    position: relative;
+}
+.footer-mean ul li a{
+    color: #666;
+}
+.footer-mean ul li a:after{
+    content: '|';
+    position: absolute;
+    right: -20px;
+}
+.footer-mean ul li:last-child a:after{
+    content: '';
+}
+.footer-contact{
+    margin: 5px 0;
+}
+.footer-contact span{
+    color: #666;
+    font-size: 14px;
+    cursor: pointer;
+}
+.footer-contact span:before{
+    margin: 0 4px;
+}
+.footer-contact span:hover:before{
+    color: red;
+}
+.footer-span:after{
+    content: '|';
+    display: inline-block;
+    padding: 0 4px;
+}
+.footer-copyright {
+    color: #9c9c9c;
+    margin-top: 6px;
+}
+
+
+
+
+
+
+

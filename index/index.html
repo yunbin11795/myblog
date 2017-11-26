@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/behavior.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/pager.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/iconfont.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script type="text/javascript" src="../static/js/paging.js"></script>
+    <script src="../static/js/template.js"></script>
+</head>
+<body>
+<header>
+    <div class="header-top">
+        <div class="top-left">
+            <span class="icon"></span>
+            <span class="icon-name">博客</span>
+        </div>
+        <div class="top-right">
+            <a href=""><span class="login">登录</span></a>
+            <span>注册</span>
+            <span class="glyphicon glyphicon-search" id="search"></span>
+            <span class="glyphicon glyphicon-align-justify"></span>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="搜索">
+            <span class="glyphicon glyphicon-search"></span>
+        </div>
+    </div>
+    <div class="header-mean">
+        <div class="mean-left">
+            <ul>
+                <li class="page-index"><a href="index.html">首页</a></li>
+                <li><a href="../BlogPost/column.html">博客专栏</a></li>
+                <li><a href="#">行家</a></li>
+                <li><a href="#">下载</a></li>
+                <li><a href="#">排行榜</a></li>
+                <li><a href="#">我的博客</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="blob_show">
+    <div class="blob_list_warp">
+        <div class="blob_listItem">
+
+        </div>
+        <div value="1 0"></div>
+        <div id="page" class="page_div"></div>
+    </div>
+    <div class="blob_right visible-lg-block visible-md-block">
+        <div class="individual-resume">
+            <div class="author-content">
+                <img src="images/timg.jpg">
+                <span class="author-name">小明</span>
+            </div>
+            <p class="author-detail">
+                《精通Python网络爬虫》作者，研究方向为Python、大数据、人工智能
+            </p>
+        </div>
+        <div class="blob-content-type">
+            <h4>博文分类</h4>
+            <ul>
+                <li>
+                    <a href="" class="type-icon icon-shouji">移动开发</a>
+                    <a href="" class="type-icon icon-jiagou ">架构</a>
+                </li>
+                <li>
+                    <a href="" class="type-icon icon-yunjisuan">云计算/大数据</a>
+                    <a href="" class="type-icon icon-hulianwang">互联网</a>
+                </li>
+                <li>
+                    <a href="" class="type-icon icon-yunwei">运维</a>
+                    <a href="" class="type-icon icon-shujuku">数据库</a>
+                </li>
+                <li>
+                    <a href="" class="type-icon icon-qianduan">前端</a>
+                    <a href="" class="type-icon icon-biancheng">编程语言</a>
+                </li>
+                <li>
+                    <a href="" class="type-icon icon-yanfa">研发管理</a>
+                    <a href="" class="type-icon icon-zonghe">综合</a>
+                </li>
+            </ul>
+        </div>
+        <div class="blob-book-recommend">
+            <h4>专家图书推荐</h4>
+            <ul>
+                <li>
+                    <img src="images/book1.jpg" class="book-img">
+                    <p>高性能服务系统构建与实战</p>
+                    <div class="book-content">
+                        <span>银文杰</span>
+                        <img src="images/export.png">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/book2.jpg" class="book-img">
+                    <p>架构解密：从分布式到微服务</p>
+                    <div class="book-content">
+                        <span>Leader-us</span>
+                        <img src="images/export.png">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/book3.jpg" class="book-img">
+                    <p>JVM高级特性与最佳实践（第2版）</p>
+                    <div class="book-content">
+                        <span>周志明</span>
+                        <img src="images/export.png">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="new-professor">
+            <h4>最新专家</h4>
+            <ul>
+                <li>
+                    <img src="images/professor1.jpg" class="professor-img">
+                    <div class="professor-content">
+                        <span>邓绪佳</span>
+                        <p>我是嘉仔</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/professor2.jpg" class="professor-img">
+                    <div class="professor-content">
+                        <span>CSDN研发频道</span>
+                        <p>CSDN研发频道，关注Web开发、Java、.NET、架构、数据库等技术领域。</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/professor3.jpg" class="professor-img">
+                    <div class="professor-content">
+                        <span>郑浩</span>
+                        <p>从事java开发已经四年的时间，从入行开始就坚持写博客，目前职位是java高级开发工程师，...</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="knowledge-base">
+            <h4>推荐知识库</h4>
+            <ul>
+                <li>
+                    <img src="../static/images/android.jpg" class="knowledge-img">
+                    <div class="knowledge-content">
+                        <h5>Android</h5>
+                        <p>收录数:<span>3162</span></p>
+                        <p>关注数:<span>38615</span></p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../static/images/react.jpg" class="knowledge-img">
+                    <div class="knowledge-content">
+                        <h5>React</h5>
+                        <p>收录数:<span>393</span></p>
+                        <p>关注数:<span>3823</span></p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../static/images/zhineng.jpg" class="knowledge-img">
+                    <div class="knowledge-content">
+                        <h5>人工智能基础</h5>
+                        <p>收录数:<span>212</span></p>
+                        <p>关注数:<span>17668</span></p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../static/images/java.jpg" class="knowledge-img">
+                    <div class="knowledge-content">
+                        <h5>Java</h5>
+                        <p>收录数:<span>3748</span></p>
+                        <p>关注数:<span>37087</span></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="hot-blob-rank">
+            <h4>热文排行榜</h4>
+            <ul>
+                <li><span class="glyphicon glyphicon-chevron-right"></span>JavaScript中的this(你不知...</li>
+                <li><span class="glyphicon glyphicon-chevron-right"></span>iptables基础</li>
+                <li><span class="glyphicon glyphicon-chevron-right"></span>M100ubuntu激活测试</li>
+                <li><span class="glyphicon glyphicon-chevron-right"></span>open学习:安装与图像载入,融合</li>
+                <li><span class="glyphicon glyphicon-chevron-right"></span>冈萨雷斯数字图像处理学习2:视觉基础</li>
+            </ul>
+        </div>
+        <div class="connect-us">
+            <h4>联系我们</h4>
+            <ul>
+                <li>首页投稿</li>
+                <li>官方博客</li>
+                <li>联系客服:webmaster@csdn.net</li>
+                <li>CSDN博客QQ群号:374041348</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-mean">
+        <ul>
+            <li><a href="">公司简介</a></li>
+            <li><a href="">招贤纳士</a></li>
+            <li><a href="">广告服务</a></li>
+            <li><a href="">联系方式</a></li>
+            <li><a href="">版权声明</a></li>
+            <li><a href="">法律顾问</a></li>
+            <li><a href="">问题报告</a></li>
+            <li><a href="">合作伙伴</a></li>
+            <li><a href="">论坛反馈</a></li>
+        </ul>
+    </div>
+    <div class="footer-contact">
+        <span class="iconfont icon-qq">网站客服</span>
+        <span class="iconfont icon-qq">杂志客服</span>
+        <span class="iconfont icon-iconfonticonfontweibo">微博客服</span>
+        <span class="iconfont icon-youxiang">webmaster@csdn.net</span>
+        <span class="iconfont icon-dianhua footer-span">400-660-0108</span>
+        <span class="footer-span">北京创新乐知信息技术有限公司 版权所有</span>
+        <span class="footer-span">江苏知为计算机有限公司</span>
+        <span>江苏乐知网络技术有限公司</span>
+    </div>
+    <div class="footer-copyright">
+        <span class="footer-span">京ICP证09002463号</span>
+        <span>Copyright©1996-2016,CSDN.NET,All Reserved</span>
+    </div>
+</footer>
+
+<script id="js-tmp" type="text/html">
+    {{each list as product i}}
+    <div class="blob_list">
+        <div class="blob_header hidden-xs">
+            <img src="images/toxiang.jpg" class="user_img">
+            <span class="list_name">{{product.username}}</span>
+            <img src="images/export.png">
+        </div>
+        <div class="blob_list_content">
+            <h4>Android 应用内悬浮控件实践总结</h4>
+            <p>
+                在工作中遇到一个需求，需要在整个应用的上层悬浮显示控件，目标效果如下图：首先想到的是申请悬浮窗权限，OK~ 打开搜索引擎，映入眼帘的并不是如何申请，而是“Android 悬浮窗权限各机型各系统适配大全...
+            </p>
+            <div class="blob_label">
+                <div>
+                    <span  class="glyphicon glyphicon-align-justify"></span>
+                    <span class="blob_type">{{product.type}}</span>
+                </div>
+                <div>
+                    <span class="blob_time">前天11:30</span>
+                    <span class="glyphicon glyphicon-eye-open"></span>
+                    <span class="blob_number">661</span>
+                </div>
+            </div>
+        </div>
+    </div>
+  {{/each}}
+</script>
+<script src="js/index.js"></script>
+
+</body>
+</html>
